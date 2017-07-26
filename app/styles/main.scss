@@ -1,0 +1,62 @@
+// bower:scss
+@import "bower_components/bootstrap/scss/bootstrap.scss";
+// endbower
+
+$primary: #53ad5a;
+$secondary: #b64ac4;
+$background: #494949;
+
+body{
+  background-color: $background;
+  font-family: 'Oswald', sans-serif;
+}
+
+
+#firstPgTxt{
+  position: relative;
+}
+
+#mainCircle{
+  position: absolute;
+  overflow: hidden;
+  text-align: center;
+  background: $primary;
+  border-radius:50%;
+  z-index: 2;
+}
+#backgroundCircle{
+  position: absolute;
+  overflow: hidden;
+  background: $secondary;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+
+@media screen and (max-width:480px){
+  #mainCircle{
+    margin-left: (-20%);
+    margin-top: 10%;
+    //margin-bottom: auto;
+    width: 140%;
+    padding-top: 140%;
+  }
+  #backgroundCircle{
+    margin-left: (-18%);
+    margin-top: 13%;
+    //margin-bottom: auto;
+    width: 140%;
+    padding-top: 140%;
+  }
+  #firstPgTxt{
+    #name{
+      margin-top: -67%;
+      margin-left: -30%;
+      font-size: 33px;
+    }
+    #title{
+      font-size: 28px;
+      margin-left:-18%;
+    }
+  }
+}
