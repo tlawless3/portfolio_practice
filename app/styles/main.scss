@@ -2,34 +2,43 @@
 @import "bower_components/bootstrap/scss/bootstrap.scss";
 // endbower
 
+//colors
 $primary: #53ad5a;
 $secondary: #b64ac4;
 $background: #494949;
+$greyTxt: #898989;
 
 body{
   background-color: $background;
   font-family: 'Oswald', sans-serif;
 }
 
-
 #firstPgTxt{
   position: relative;
 }
 
 #mainCircle{
-  position: absolute;
+  position: fixed;
   overflow: hidden;
   text-align: center;
   background: $primary;
   border-radius:50%;
   z-index: 2;
 }
+
 #backgroundCircle{
-  position: absolute;
+  position: fixed;
   overflow: hidden;
   background: $secondary;
   border-radius: 50%;
   z-index: 1;
+}
+
+#btns{
+  text-align: left;
+}
+#btns: hover{
+  color:$greyTxt;
 }
 
 
@@ -57,6 +66,10 @@ body{
     #title{
       font-size: 28px;
       margin-left:-18%;
+    }
+    #btns{
+      margin-left: 50%;
+      font-size: 20px;
     }
   }
 }
